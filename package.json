@@ -1,0 +1,20 @@
+{
+  "name": "doorbell-watcher",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "tray": "node index.mjs --tray --sound",
+    "scan": "node index.mjs --scan",
+    "debug": "node index.mjs --debug",
+    "simulate": "node index.mjs --simulate --sound",
+    "autostart": "node index.mjs --autostart",
+    "no-autostart": "node index.mjs --no-autostart"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "node-notifier": "^10.0.1",
+    "systray2": "^2.1.4"
+  }
+}
